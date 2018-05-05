@@ -15,13 +15,11 @@ class PostNew extends Component {
                 <label>{field.label}</label>
                 <input className="form-control"
                     type="text"
-                    // onChange={field.input.onChange}
-                    // onFocus={field.input.onFocus}
                     {...field.input}
                 />
 
                 <div className="text-help">
-                    {touched ? error : ''}
+                    { touched ? error : '' }
                 </div>
             </div>
         )    
@@ -62,7 +60,7 @@ class PostNew extends Component {
 }
 
 function validate(values) {
-    // console.log(values);    
+    console.log(values);    
 
     const errors = {};
 
